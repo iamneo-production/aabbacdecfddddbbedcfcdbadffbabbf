@@ -18,17 +18,17 @@ const Stopwatch = () => {
 
     const handleStart = () => {
     setIsActive(true);
-                                                    setIsPaused(false);
-                                                        countRef.current = setInterval(() => {
-                                                              setTime((time) => time + 1);
-                                                                  }, 1000);
-                                                                    };
+    setIsPaused(false);
+    countRef.current = setInterval(() => {
+    setTime((time) => time + 1);
+    }, 1000);
+    };
 
-                                                                      const handlePause = () => {
-                                                                          clearInterval(countRef.current);
-                                                                              setIsPaused(true);
-                                                                                  setIsActive(false);
-                                                                                    };
+    const handlePause = () => {
+    clearInterval(countRef.current);
+    setIsPaused(true);
+    setIsActive(false);
+    };
 
                                                                                       const handleResume = () => {
                                                                                           setIsActive(true);
