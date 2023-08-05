@@ -7,7 +7,7 @@ const Stopwatch = () => {
   const countRef = useRef(null);
 
   const formatTime = (timeInSeconds) => {
-    const padTime = (time, digits) => {
+const padTime = (time, digits) => {
       return `${new Array(digits - time.toString().length).fill(0).join("")}${time}`;
       };
     const hours = Math.floor(timeInSeconds / 3600);
